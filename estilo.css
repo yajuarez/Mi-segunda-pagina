@@ -1,0 +1,40 @@
+body {
+    background-color: pink;
+}
+.contenedor {
+    text-align: center;
+}
+.centrar-imagen {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 50vh;
+}
+.texto-destacado{
+    color: grey;
+    font-size: 35px;
+}
+.borde-imagen{
+    border: 2px solid white;
+}
+a.enlace.estilizado{
+    color:aqua;
+    text-decoration: none;
+}
+.lista-estilizada {
+    list-style-type:circle;
+    color:red;
+}
+a.enlace.estilizado:hover {
+    color: red;
+}
+.boton-personalizado{
+    background-color: rosybrown;
+    color:white;
+    padding: 5px 20px;
+    border: none;
+    cursor: pointer;
+}
+.boton-personalizado:hover {
+    color:blueviolet
+}
