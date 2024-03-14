@@ -9,21 +9,67 @@
 <body>
   <div class="contenedor">
     <h1 class="texto-destacado">Mi segunda pagina web</h1>
+    <h2 class="subtitulo"> -Practicando CCS- </h2>
   </div>
-  <div class="centrar-imagen">
-    <img src="imagenes/perrito.jpeg" alt="perro pc" class="borde-imagen">
-  </div>
-  <p>Practicando css</p>
 
-  <h2> Cosas que pienso mientras aprendo a usar este nuevo lenguaje</h2>
+<nav class="menu-navegacion">
   <ul>
+    <li> <a href="#"> Inicio</a></li>
+    <li> <a href="#"> A cerca de</a></li>
+    <li> <a href="#"> Servicios </a></li>
+    <li> <a href="#"> Contacto</a></li>
+  </ul>
+   <form class="formulario-busqueda"> 
+      <input type="text" placeholder="Buscar" class="campo-busqueda">
+      <button type="submit" class="boton-busqueda"> Buscar</button>
+    </form>
+</nav>
+
+  <div class="centrar-imagen">
+    <img src="imagenes/perrito.png" alt="perro pc" class="borde-imagen">
+  </div>
+  
+  <ul class="lista-estilizada">
+    <h2> Cosas que pienso mientras aprendo a usar este nuevo lenguaje</h2>
     <li> Me seria muy util saber ingles</li>
     <li> No me parece sencillo todo esto</li>
-    <li> Me entrento al mismo tiempo</li>
+    <li> Me entretengo al mismo tiempo</li>
   </ul>
     
 
-    <a href="https://www.memegenerator.es/meme/31712825" class="enlace.estilizado">Enlace</a>
-    <button class="boton-personalizado"> Ver mas</button>
+  <a href="https://www.memegenerator.es/meme/31712825" class="enlace-estilizado">Enlace</a>
+  <button class="boton-personalizado"> Ver mas</button>
+
+  <table class="tabla-estilizada">
+    <h2> Personas</h2>
+    <tr>
+      <th>Nombre</th>
+      <th> Edad</th>
+    </tr> 
+    <tr>
+      <td>Lucas</td>
+      <td> 21</td>
+    </tr>
+    <tr>
+      <td>Johana</td>
+      <td>31</td>
+    </tr>
+    <tr> 
+      <td>Juan</td>
+      <td> 21 </td>
+    </tr>
+
+  </table>
+
+  <div class="formulario-contacto"> 
+    <h2>Contacto</h2>
+    <form>
+      <input type="text" placeholder="Nombre" class="campo-nombre">
+      <input type="email" placeholder="Correo elecronico" class="campo-correo">
+      <button type="submit"class="campo-enviar"> Enviar</button>
+    </form>
+
+  
+    
 </body>
 </html>

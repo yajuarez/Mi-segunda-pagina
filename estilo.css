@@ -1,14 +1,69 @@
 body {
-    background-color: pink;
+    background-color:mistyrose;
 }
 .contenedor {
     text-align: center;
+    color: gray;
+    background-color: mistyrose;
+    line-height: 0.5;
+    position: fixed;
+    margin: 0%;
+    top:0%;
+    width: 100%;
+    background-image: url('imagenes/pcs.jpg');
+    background-size: cover;
+    text-align: center;
+    height: 150px;
+    z-index: 1;
 }
+.texto-destacado,
+.subtitulo {
+    position: relative;
+    top: 12%;
+}
+
+.menu-navegacion {
+    background-color: rosybrown;
+    overflow: hidden;
+    margin-top: 10%;
+    text-align: center;
+}
+.menu-navegacion ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0px;
+}
+.menu-navegacion li a {
+    color: mistyrose;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: sans-serif;
+    font-weight: bold;
+}
+.menu-navegacion li a:hover, 
+.formulario-busqueda .boton-busqueda:hover {
+    color: pink;
+}
+.formulario-busqueda {
+    display: flex;
+    border: 1px;
+    justify-content: center;
+    border: none;
+}
+.boton-busqueda {
+    background-color: mistyrose;
+    border: 1px;
+    border-color:pink;
+    color: gray;
+}
+
+
 .centrar-imagen {
     display: flex;
     justify-content: center;
     align-content: center;
     height: 50vh;
+    
 }
 .texto-destacado{
     color: grey;
@@ -16,16 +71,33 @@ body {
 }
 .borde-imagen{
     border: 2px solid white;
-}
+    width: 70%;
+    margin-top: 5px;
+    animation: moverImagen 2s infinite alternate;
+ }
+ @keyframes moverImagen {
+    from {
+        transform: translateX(0);
+        }
+        to {
+        transform: translateX(50px);
+        }
+        }
+     
 a.enlace.estilizado{
     color:aqua;
     text-decoration: none;
 }
+/*este es el que mas me costo, no se si esta mal porque no veo alguna diferencia en la pagina mas que el cambio de color de las letras*/
 .lista-estilizada {
-    list-style-type:circle;
-    color:red;
+    list-style-type: circle;
+    color: gray;
 }
-a.enlace.estilizado:hover {
+.lista-estilizada li {
+    padding: 0.5px;
+    border-bottom: 1px dotted #ccc;
+}
+a.enlace-estilizado a:hover {
     color: red;
 }
 .boton-personalizado{
@@ -36,5 +108,32 @@ a.enlace.estilizado:hover {
     cursor: pointer;
 }
 .boton-personalizado:hover {
-    color:blueviolet
+    color:blueviolet;
 }
+.tabla-estilizada {
+    border: 3px solid gray;
+    width: 30%;
+    border-collapse: collapse;
+}
+.tabla-estilizada tbody tr:nth-child(even) {
+    background-color: lightgrey
+}
+.tabla-estilizada th,
+.tabla-estilizada td {
+    text-align: center;
+    border: 1px solid gray;
+    padding: 8px;
+}
+.campo-nombre {
+    background-color: linen ;
+    color: gray;
+}
+.campo-correo {
+    background-color: mistyrose;
+    color: gray
+}
+.campo-enviar {
+    background-color: rosybrown;
+    color: white;
+    };
+
